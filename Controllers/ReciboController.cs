@@ -14,6 +14,7 @@ namespace Studio.Vision.POS.Telko.WebApi.Controllers
         [HttpPost]
         public HttpResponseMessage Post([FromBody] ReciboRequest model)
         {
+            //***Nivel Cabecera***//
             var message = "";
             var Numero = "";
             var ClienteId = 0;
@@ -21,12 +22,12 @@ namespace Studio.Vision.POS.Telko.WebApi.Controllers
             var Moneda = 0;
             var Importe = 0.0;
             var Observaciones = "";
-            // Nivel Cobros
+            //***Nivel Cobros***//
             var PlanFinancieroId = 0;
             var MonedaId = 0;
             var TipoDeCambio = 0.0;
             var Monto = 0.0;
-            //Nivel Atributo
+            //***Nivel Atributo***//
             var AtributoId = 0;
             var Valor = "";
 
